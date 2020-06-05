@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>template with js</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+        <link rel="stylesheet" href="css/master.css" />
+    </head>
+    <body>
+        <!-- Start the scroll to top button-->
+        <div class="scrollTop">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+        <!-- end the scroll to top button-->
+        
+        <!-- Start the scroll to navigation bullets-->
+        <div class="nav-bullets">
+            <div class="bullet active" data-section="#home">
+                <div class="tooltip">home</div>
+            </div>
+            <div class="bullet" data-section="#about">
+                <div class="tooltip">about</div>
+            </div>
+            <div class="bullet" data-section="#skills">
+                <div class="tooltip">skills</div>
+            </div>
+            <div class="bullet" data-section="#gallery">
+                <div class="tooltip">gallery</div>
+            </div>
+            <div class="bullet" data-section="#timeline">
+                <div class="tooltip">time line</div>
+            </div>
+            <div class="bullet" data-section="#feature">
+                <div class="tooltip">features</div>
+            </div>
+            <div class="bullet" data-section="#testimonial">
+                <div class="tooltip">testimonial</div>
+            </div>
+            <div class="bullet" data-section="#contact">
+                <div class="tooltip">contact us</div>
+            </div>
+        </div>
+        <!-- end the scroll to navigation bullets-->
+        
+        <!-- Start the Section Of Box Options -->
+        <div class="box-options">
+            <div class="toggle-menu">
+                <i class="fa fa-cog"></i>
+            </div>
+            <div class="option-colors options">
+                <h6>choose your favorite color : </h6>
+                <ul>
+                    <li data-color="#2980b9" class="active"></li>
+                    <li data-color="#27ae60"></li>
+                    <li data-color="#e84393"></li>
+                    <li data-color="#8e44ad"></li>
+                    <li data-color="#d35400"></li>
+                </ul>
+            </div>
+            <div class="option-bgImages options">
+                <h6>switch on the random background images ?</h6>
+                <div>
+                    <span class="yes active">yes</span>
+                    <span class="no">no</span>
+                </div>
+            </div>
+            <div class="option-bullets options">
+                <h6>show the section bullets ?</h6>
+                <div>
+                    <span class="yes active">yes</span>
+                    <span class="no">no</span>
+                </div>
+            </div>
+        </div>
+        <!-- End the Section Of Box Option -->
+        
+        <!-- Start the Section Of Header -->
+        <header id="home" class="section">
+            <div class="overley">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="h3" href="#">dar<span>sha</span></a>
+                        </div>
+                        <div class="navbar-menu">
+                            <ul class="navbar-nav">
+                                <li class="active"><a href="#home">home</a></li>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#skills">skills</a></li>
+                                <li><a href="#gallery">gallery</a></li>
+                                <li><a href="#timeline">time line</a></li>
+                                <li><a href="#feature">features</a></li>
+                                <li><a href="#testimonial">testimonial</a></li>
+                                <li><a href="#contact">contact us</a></li>
+                            </ul>
+                            <div class="navbar-toggle">
+                                <i class="fa fa-bars fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-content">
+                    <h1>we are <span>creative</span> agency</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                </div>
+            </div>
+        </header>
+        <!-- End the Section Of Header -->
+        
+        <!-- Start The Section Of About Us -->
+        <section id="about" class="section about md-padding">
+            <h2 class="section-title">about me</h2>
+            <div class="container">
+                <div class="about-info">
+                    <h4 class="h1">ahmed darsha</h4>
+                    <span>web designer</span>
+                    <p>Computer Science graduate, Benha University with bachelor degree, with an emphasis in web design as a front end</p>
+                    <p><i class="fa fa-mobile fa-fw"></i> : 0112824893</p>
+                    <p><i class="fa fa-home fa-fw"></i> : quwesna, menufia, egypt</p>
+                    <p><i class="fa fa-github fa-fw"></i> : <a target="_blank" href="https://github.com/ahmedarsha">github</a> </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/ahmed.png">
+                </div>
+            </div>
+        </section>
+        <!-- End The Section Of About Us -->
+        
+        <!-- Start The Section Of Skills -->
+        <section id="skills" class="section skills md-padding">
+            <div class="container">
+                <div class="skill">
+                    <h2 class="section-title">my skills</h2>
+                    <div class="skill-progress">
+                        <p class="prog-name">html/css</p>
+                        <p class="prog-percent">
+                            <span data-percent="90%"></span>
+                        </p>
+                    </div>
+                    <div class="skill-progress">
+                        <p class="prog-name">javascript</p>
+                        <p class="prog-percent">
+                            <span data-percent="80%"></span>
+                        </p>
+                    </div>
+                    <div class="skill-progress">
+                        <p class="prog-name">bootstrap</p>
+                        <p class="prog-percent">
+                            <span data-percent="90%"></span>
+                        </p>
+                    </div>
+                    <div class="skill-progress">
+                        <p class="prog-name">jquary</p>
+                        <p class="prog-percent">
+                            <span data-percent="85%"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End The Section Of Skills -->
+        
+        <!-- Start The Section Of gallery -->
+        <section id="gallery" class="section md-padding gallery">
+            <div class="container">
+                <div class="box-gallery">
+                    <h2 class="section-title">gallery</h2>
+                    <img src="images/bg-01.jpg" alt=" image one"/>
+                    <img src="images/bg-02.jpg" alt=" image two"/>
+                    <img src="images/bg-03.jpg" alt=" image three"/>
+                    <img src="images/bg-04.jpg" alt=" image four"/>
+                    <img src="images/bg-05.jpg" alt=" image five"/>
+                    <img src="images/bg-06.jpg" alt=" image sex"/>
+                    <img src="images/bg-07.jpg" alt=" image seven"/>
+                    <img src="images/bg-08.jpg" alt=" image eight"/>
+                    <img src="images/bg-09.jpg" alt=""/>
+                    <img src="images/bg-10.jpg" alt=""/>
+                </div>
+            </div>
+        </section> 
+        <!-- End The Section Of Feature -->
+        
+        <!-- Start The Section Of Time Line -->
+        <section id="timeline" class="section md-padding timeline">
+            <div class="container">
+                <div class="timeline-content">
+                    <div class="year">2018</div>
+                    <div class="f-left">
+                        <div class="content">
+                            <h3>time line header</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="f-right">
+                        <div class="content">
+                            <h3>time line header</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="year">2019</div>
+                    <div class="f-left">
+                        <div class="content">
+                            <h3>time line header</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="f-left">
+                        <div class="content">
+                            <h3>time line header</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="f-right">
+                        <div class="content">
+                            <h3>time line header</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End The Section Of Time Line -->
+        
+        <!-- Start The Section Of Features -->
+        <section id="feature" class="section md-padding features">
+            <div class="container">
+                <div class="feature">
+                    <h2 class="section-title">features</h2>
+                    <div class="feat">
+                        <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
+                        <h4>development</h4>
+                        <p>Lorem ipsum dolor sit amet elit.Quo tempora labore omnis quaerat.</p>
+                    </div>
+                    <div class="feat">
+                        <i class="fa fa-cart-arrow-down fa-3x" aria-hidden="true"></i>
+                        <h4>marketing</h4>
+                        <p>Lorem ipsum dolor sit amet elit.Quo tempora labore omnis quaerat.</p>
+                    </div>
+                    <div class="feat">
+                        <i class="fa fa-server fa-3x" aria-hidden="true"></i>
+                        <h4>hosting</h4>
+                        <p>Lorem ipsum dolor sit amet elit.Quo tempora labore omnis quaerat.</p>
+                    </div>
+                    <div class="feat">
+                        <i class="fa fa-database fa-3x" aria-hidden="true"></i>
+                        <h4>database</h4>
+                        <p>Lorem ipsum dolor sit amet elit.Quo tempora labore omnis quaerat.</p>
+                    </div>
+                    <div class="feat">
+                        <i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i>
+                        <h4>cloud and service</h4>
+                        <p>Lorem ipsum dolor sit amet elit.Quo tempora labore omnis quaerat.</p>
+                    </div>
+                    <div class="feat">
+                        <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
+                        <h4>seo</h4>
+                        <p>Lorem ipsum dolor sit amet elit.Quo tempora labore omnis quaerat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <!-- End The Section Of Features -->
+        
+        <!-- Start The Section Of Testimonial -->
+        <section id="testimonial" class="section md-padding testimonials">
+            <div class="container">
+                <div class="testimonial">
+                    <h2 class="section-title">testimonials</h2>
+                    <div class="testim-content">
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</q>
+                        <div class="person-info">
+                            <img src="http://placehold.it/100/800">
+                            <p>ahmed ali</p>
+                            <span>seo at company</span>
+                        </div>
+                    </div>
+                    <div class="testim-content">
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</q>
+                        <div class="person-info">
+                            <img src="http://placehold.it/100/100">
+                            <p>khaled gamel</p>
+                            <span>development</span>
+                        </div>
+                    </div>
+                    <div class="testim-content">
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</q>
+                        <div class="person-info">
+                            <img src="http://placehold.it/100/080">
+                            <p>mohammed abdo</p>
+                            <span>testing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <!-- End The Section Of Testimonial -->
+        
+        <!-- Start The Section Of Contact Us -->
+        <section id="contact" class="section md-padding contact">
+            <div class="container">
+                <div class="content">
+                    <h2 class="section-title">contact us</h2>
+                    <form>
+                        <div class="f-left">
+                            <input name="name" type="text" placeholder="Your Name">
+                            <input name="phone" type="tel" placeholder="Your phone">
+                            <input name="email" type="email" placeholder="Your Email">
+                            <input name="subject" type="text" placeholder="Your Subject">
+                        </div>
+                        <div class="f-right">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                            <button type="button">send</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End The Section Of Contact Us -->
+        
+        <!-- Start The Section Of Footer -->
+        <div class="footer">
+            <p>copyright&COPY; 2020 created with <i class="fa fa-heart"></i> by <a href="#">darsah</a></p>
+        </div>
+        <!-- End The Section Of Footer -->
+        
+        <script src="js/master.js"></script>
+    </body>
+</html>
