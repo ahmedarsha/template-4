@@ -138,9 +138,11 @@ ul{
     z-index: 999;
     background: #FFF;
     box-shadow: 0 0 3px #333;
-    transition: .3s ease-in-out
+    transition: .3s ease-in-out;
 }
-.box-options.open{left: 0}
+.box-options.open{
+    left: 0;    
+}
 .box-options .toggle-menu{
     background-color: #000;
     width: 30px;
@@ -183,7 +185,7 @@ ul{
 .box-options span{
     display: inline-block;
     background: var(--main-color);
-    width: 60px;
+    min-width: 60px;
     padding: 3px;
     color: #FFF;
     border-radius: 16px;
@@ -198,6 +200,7 @@ ul{
     transition: 0.3s ease-in-out;
 }
 .box-options .active{opacity: 1}
+.box-options .option-reset span{padding: 5px 20px;}
 /* End The Section Of Box Options */
 
 /* Start The Section Of Header */
@@ -604,6 +607,10 @@ header .header-content span{color: var(--main-color);}
     text-transform: uppercase
 }
 .footer p i{color: #f00}
+.footer p a{
+    color: var(--main-color);
+    font-weight: bold;
+}
 /* End The Section Of Footer */
 
 

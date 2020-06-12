@@ -1,7 +1,6 @@
 /*********** Scroll To Top   ************/
 let scrollTop = document.querySelector(".scrollTop");
 scrollTop.addEventListener("click",function(){
-    //window.scrollTo(0,0);
     document.getElementById("home").scrollIntoView({
         behavior:"smooth"
     });
@@ -54,7 +53,7 @@ document.querySelectorAll(".option-bullets span").forEach( ele =>{
 });
 
 
-/*check if there's color choosed storage in local*/
+/*check if there's color choosed in local storage*/
 const colorsList = document.querySelectorAll(".option-colors li");
 let mainColor = localStorage.getItem("favColor");
 if(mainColor !== null){
@@ -237,6 +236,13 @@ document.querySelectorAll(".box-gallery img").forEach(img => {
                 });
                 // add class active to link of this section
                 navBullet.classList.add("active");
+                
+                //change the background color of button scroll top
+                if(this.pageYOffset >= document.getElementById("testimonial").offsetTop){
+                    scrollTop.style.backgroundColor = "#fff";
+                }else{
+                    scrollTop.style.backgroundColor = "#000";
+                }
             }
         }              
     });
@@ -267,3 +273,12 @@ document.querySelectorAll(".box-gallery img").forEach(img => {
         });
     } 
  };
+ 
+ //reset the option box
+ document.querySelector(".option-reset").onclick = function(){
+     console.log(localStorage);
+     localStorage.removeItem("favColor");
+     localStorage.removeItem("bgOption");
+     localStorage.removeItem("option-bullet");
+     location.reload(); 
+ } ;
